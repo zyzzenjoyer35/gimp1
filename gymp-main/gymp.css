@@ -60,10 +60,54 @@ p.icons {
   padding-top: 1vh;
   padding-bottom: 1vh;
 }
-.name {
+.option{
+  
+  border:3px solid transparent;
+  /* border-bottom:1px solid rgb(224, 224, 224); */
+}
+.first .option:nth-child(2){
+  border-bottom:none;
+}
+.first .option:nth-child(2):hover{
+  border-bottom:3px solid lightgray;
+}
+/* .name {
   margin-left: 1vw;
   border-bottom: 1px solid rgb(224, 224, 224);
 }
 .name.no {
   border: none;
+} */
+.option img{
+  transition: 4s;
+}
+.name{
+position: relative;
+top: -11px;
+transition:4s;
+}
+.material-symbols-outlined{
+  /* position: relative;
+  top:2px; */
+  float:right;
+  padding-right:1vw;
+  padding-top:0.5vh;
+}
+/* p.on{
+  color:gray;
+  position: relative;
+  top: -13px;
+  padding-left:70vw;
+} */
+.option:hover{
+  border:3px solid lightgray;
+  opacity:0.75;
+  border-radius:15px;
+}
+.option .name:hover{
+transform:scale(1.05);
+}
+.option img:hover, .option .name:hover{
+  transform: rotate(1turn);
+  transition:4s;
 }
